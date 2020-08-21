@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Loaded="Page_Loaded" d:DesignHeight="640" d:DesignWidth="666">
 
-    <Grid Opacity="0.85" CornerRadius="15,15,15,15" SizeChanged="Grid_SizeChanged" Background="Black">
+    <Grid Opacity="0.85" CornerRadius="15,15,15,15" Background="Black">
 
 
 
@@ -15,7 +15,7 @@
 
 
         <StackPanel x:Name="stackPanel" VerticalAlignment="Top"
-            Orientation="Horizontal" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" UseLayoutRounding="True" Margin="0,0,0,0" HorizontalAlignment="Stretch" SizeChanged="stackPanel_SizeChanged" Height="50" Background="Black">
+            Orientation="Horizontal" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" UseLayoutRounding="True" Margin="0,0,0,0" HorizontalAlignment="Stretch"  Height="50" Background="Black">
 
             <Image x:Name="IMG" HorizontalAlignment="Left" Height="25" Margin="10,10,0,10" VerticalAlignment="Top" Width="25" Source="/Assets/dot_PNG18.png" FocusVisualPrimaryBrush="{x:Null}" Tapped="IMG_Tapped"/>
             <TextBlock x:Name="txtCount" Text="..." Margin="10,10,0,10"  FontSize="20" TextAlignment="Start" SelectionHighlightColor="Black" Foreground="White" />
@@ -24,7 +24,7 @@
 
 
 
-        <ListView ItemsSource="{x:Bind Mes}" VerticalAlignment="Bottom" Margin="0,50,0,0" HorizontalContentAlignment="Left" Padding="0,0,0,0">
+        <ListView ItemsSource="{x:Bind Mes}"  Margin="0,50,0,0" HorizontalContentAlignment="Left" Padding="0,0,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate x:Name="DoubleLineDataTemplate" x:DataType="local:Messages">
                     <StackPanel Orientation="Horizontal" Height="64" AutomationProperties.Name="{x:Bind Name}">
